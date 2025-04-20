@@ -107,7 +107,7 @@ svg.innerHTML = `
 `;
 document.body.appendChild(svg);
 
-
+//Termina a Estilização
 
 // Função para carregar GeoJSONs com estilos
 function loadGeoJSON(url, style, bringToBack = false) {
