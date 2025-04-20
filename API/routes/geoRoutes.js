@@ -6,7 +6,7 @@ const { exportKMZ, exportSHP } = require('../controllers/exportController');
 // ------------------------- Rota para retornar GeoJSON -------------------------
 router.get('/geojson', async (req, res) => {
     const { tabela } = req.query;
-    if (!tabela) return res.status(400).json({ erro: 'Parâmetro ?tabela= é obrigatório' });
+    if (!tabela) return res.status(400).json({ erro: 'Parâmetro ? tabela= é obrigatório' });
 
     try {
         const geojson = await buscarGeoJSON(tabela);
